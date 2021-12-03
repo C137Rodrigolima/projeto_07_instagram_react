@@ -1,3 +1,4 @@
+import Usuario from './Usuario.js';
 import Sugestões from './Sugestões.js';
 
 export default function Sidebar(){
@@ -18,14 +19,3 @@ export default function Sidebar(){
     );
 }
 
-function Usuario(props){
-    return (
-        <div class="usuario">
-            <img src={props.imgfonte}/>
-            <div class="texto">
-                <strong>{props.user}</strong>
-                {props.name}
-            </div>
-        </div>
-    );
-}

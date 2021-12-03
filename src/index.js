@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Navbar from './Navbar.js';
-import Corpo from './Corpo.js';
-import FundoMobile from './FundoMobile.js';
+import Navbar from './components/Navbar.js';
+import Corpo from './components/Corpo.js';
+import FundoMobile from './components/FundoMobile.js';
 
 const root = document.querySelector(".root");
 
