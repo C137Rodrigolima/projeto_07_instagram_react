@@ -3,14 +3,8 @@ import Sugestões from './Sugestões.js';
 export default function Sidebar(){
     return (
         <div class="sidebar">
-            <div class="usuario">
-                <img src="assets/img/catanacomics.svg" />
-                <div class="texto">
-                    <strong>catanacomics</strong>
-                    Catana
-                </div>
-            </div>
-
+            
+            <Usuario imgfonte="assets/img/catanacomics.svg" user="catanacomics" name="Catana"/>
             <Sugestões />
 
             <div class="links">
@@ -19,6 +13,18 @@ export default function Sidebar(){
 
             <div class="copyright">
                 © 2021 INSTAGRAM DO FACEBOOK
+            </div>
+        </div>
+    );
+}
+
+function Usuario(props){
+    return (
+        <div class="usuario">
+            <img src={props.imgfonte}/>
+            <div class="texto">
+                <strong>{props.user}</strong>
+                {props.name}
             </div>
         </div>
     );
