@@ -1,12 +1,12 @@
 const array = [
-    {img: "assets/img/9gag.svg", txt: "9gag"},
-    {img: "assets/img/meowed.svg", txt: "meowed"},
-    {img: "assets/img/barked.svg", txt: "barked"},
-    {img: "assets/img/nathanwpylestrangeplanet.svg", txt: "nathanwpylestrangeplanet"},
-    {img: "assets/img/wawawicomics.svg", txt: "wawawicomics"},
-    {img: "assets/img/respondeai.svg", txt: "respondeai"},
-    {img: "assets/img/filomoderna.svg", txt: "filomoderna"},
-    {img: "assets/img/memeriagourmet.svg", txt: "memeriagourmet"}
+    {img: "9gag.svg", txt: "9gag"},
+    {img: "meowed.svg", txt: "meowed"},
+    {img: "barked.svg", txt: "barked"},
+    {img: "nathanwpylestrangeplanet.svg", txt: "nathanwpylestrangeplanet"},
+    {img: "wawawicomics.svg", txt: "wawawicomics"},
+    {img: "respondeai.svg", txt: "respondeai"},
+    {img: "filomoderna.svg", txt: "filomoderna"},
+    {img: "memeriagourmet.svg", txt: "memeriagourmet"}
 
 ];
 
@@ -15,13 +15,13 @@ export default function Stories(){
     return(
         <div class="stories">
 
-            {array.map((item) =>
+            {array.map(({img,txt}) =>
             <div class="story">
                 <div class="imagem">
-                    <img src={item.img} />
+                    <img src={`assets/img/${img}`} />
                 </div>
                 <div class="usuario">
-                    {item.txt}
+                    {txt}
                 </div>
             </div>
             )}

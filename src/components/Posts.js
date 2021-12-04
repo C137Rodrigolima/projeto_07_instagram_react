@@ -12,7 +12,7 @@ const post = [
     },
     {
     img: "assets/img/barked.svg", 
-    user:"barked", conteudo:"assets/img/dog.svg",
+    user:"barked", conteudo:"assets/img/dog.svg", 
     imgWholiked: "assets/img/adorable_animals.svg", 
     userWholiked: "adorable_animals", 
     number: "99.159"
@@ -23,15 +23,15 @@ export default function Posts(){
     return (
         <div class="posts">
 
-        {post.map((item)=> 
+        {post.map(({img, user, conteudo, imgWholiked, userWholiked, number})=> 
             <div class="post">
-                <Topopost imagem={item.img} texto={item.user}/>
+                <Topopost imagem={img} texto={user}/>
 
                 <div class="conteudo">
-                    <img src={item.conteudo} />
+                    <img src={conteudo} />
                 </div>
 
-                <Fundopost imagem2={item.imgWholiked} texto2={item.userWholiked} texto3={item.number}/>
+                <Fundopost imagem2={imgWholiked} texto2={userWholiked} texto3={number}/>
             </div>
             )}
 

@@ -1,4 +1,4 @@
-export default function Fundopost(props){
+export default function Fundopost({imagem2, texto2, texto3}){
     return(
         <div class="fundo">
             <div class="acoes">
@@ -14,9 +14,9 @@ export default function Fundopost(props){
 
 
             <div class="curtidas">
-                <img src={props.imagem2} />
+                <img src={imagem2} />
                 <div class="texto">
-                    Curtido por <strong>{props.texto2}</strong> e <strong>outras {props.texto3} pessoas</strong>
+                    Curtido por <strong>{texto2}</strong> e <strong>outras {texto3} pessoas</strong>
                 </div>
             </div>
         </div>

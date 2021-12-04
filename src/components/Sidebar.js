@@ -5,7 +5,7 @@ export default function Sidebar(){
     return (
         <div class="sidebar">
             
-            <Usuario imgfonte="assets/img/catanacomics.svg" user="catanacomics" name="Catana"/>
+            <Usuario imgfonte="catanacomics.svg" user="catanacomics" name="Catana"/>
             <Sugestões />
 
             <div class="links">
